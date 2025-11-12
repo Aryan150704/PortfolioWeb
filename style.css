@@ -241,3 +241,71 @@ footer{padding:26px 4%;text-align:center;color:var(--muted);margin-top:24px;bord
   form{grid-template-columns:1fr}
   .nav-links{display:none}
 }
+
+/* ===========================
+   SOCIAL ICONS STYLING
+   (added by assistant)
+   =========================== */
+.social-links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.social-links a {
+  color: var(--accent);
+  font-size: 2rem;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.social-links a:hover {
+  color: var(--accent-2);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 0 16px rgba(123, 97, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  text-shadow: 0 0 8px var(--accent-2);
+}
+
+/* Optional: animate icons when .reveal becomes active */
+.reveal .social-links a {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.reveal.active .social-links a {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.36s cubic-bezier(.2,.9,.3,1);
+}
+/* === Social Icons Styling === */
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-links a {
+  color: var(--accent);
+  font-size: 1.9rem;
+  transition: all 0.25s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-2);
+  transform: translateY(-4px) scale(1.1);
+}
+.social-links a:hover {
+  color: var(--accent-2);
+  transform: translateY(-4px) scale(1.1);
+  text-shadow: 0 0 12px var(--accent-2);
+}

@@ -6,6 +6,8 @@
   <title>Aryan | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1055/1055646.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
   <header>
@@ -116,20 +118,31 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Let's Connect 🤝</h2>
-    <form id="contactForm">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Your Email" required />
-      <textarea id="message" rows="4" placeholder="Your Message"></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-    <p id="response"></p>
-    <div class="social-links">
-      <a href="https://github.com/yourusername" target="https://github.com/Aryan150704">GitHub</a>
-      <a href="https://linkedin.com/in/yourusername" target="https://www.linkedin.com/in/aryan-chaudhary-68150628a/">LinkedIn</a>
-      <a href="aryanbhanwala5@gmail.com">Email</a>
-    </div>
+  <<form id="contactForm" action="https://formspree.io/f/xvgdonky" method="POST">
+  <input type="text" id="name" name="name" placeholder="Your Name" required />
+  <input type="email" id="email" name="email" placeholder="Your Email" required />
+  <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+  <input type="hidden" name="_subject" value="New message from Aryan.dev Portfolio">
+  <button type="submit" class="btn">Send Message</button>
+</form>
+<p id="response"></p>
+ 
+
+    <!-- SOCIAL LINKS -->
+<div class="social-links">
+  <a href="https://github.com/Aryan150704" target="_blank" rel="noopener" title="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/aryan-chaudhary-68150628a/" target="_blank" rel="noopener" title="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="mailto:aryanbhanwala5@gmail.com" title="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+</div>
+
+
+
   </section>
 
   <footer>
